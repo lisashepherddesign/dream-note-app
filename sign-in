@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">“Capture the quiet corners of your mind.”</p>
+      </header>
+
+      <section class="center-column">
+        <div class="card">
+          <form>
+            <div class="field-group">
+              <label class="field-label" for="email">Email</label>
+              <input
+                class="input"
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="password">Password</label>
+              <input
+                class="input"
+                id="password"
+                type="password"
+                placeholder="••••••••"
+              />
+            </div>
+
+            <button type="submit" class="btn-primary">Sign In</button>
+          </form>
+
+          <div
+            style="
+              margin-top: 16px;
+              text-align: center;
+              font-size: 13px;
+              color: var(--text-muted);
+            "
+          >
+            Don’t have an account?
+            <button
+              class="btn-link"
+              type="button"
+              onclick="window.location.href='sign-up.html'"
+            >
+              Create one
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>

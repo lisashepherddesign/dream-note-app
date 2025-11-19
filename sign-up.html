@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">“Capture the quiet corners of your mind.”</p>
+        <div class="header-controls">
+          <span id="user-indicator" style="display:none; margin-left:12px; font-size:14px; color:var(--text-muted);">Signed in</span>
+          <button id="signout-btn" class="btn-link" style="display:none; margin-left:8px;">Sign out</button>
+        </div>
+      </header>
+
+      <section class="center-column">
+        <div class="card">
+          <form id="signup-form">
+            <div class="field-group">
+              <label class="field-label" for="name">Name</label>
+              <input
+                class="input"
+                id="name"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="email">Email</label>
+              <input
+                class="input"
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="password">Password</label>
+              <input
+                class="input"
+                id="password"
+                type="password"
+                placeholder="••••••••"
+              />
+            </div>
+
+            <button type="submit" class="btn-primary">
+              Create Account
+            </button>
+          </form>
+
+          <div
+            style="
+              margin-top: 16px;
+              text-align: center;
+              font-size: 13px;
+              color: var(--text-muted);
+            "
+          >
+            Already have an account?
+            <button
+              class="btn-link"
+              type="button"
+              onclick="window.location.href='sign-in.html'"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    <script src="script.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Get Started</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">“Capture the quiet corners of your mind.”</p>
+        <div class="header-controls">
+          <span id="user-indicator" style="display:none; margin-left:12px; font-size:14px; color:var(--text-muted);">Signed in</span>
+          <button id="signout-btn" class="btn-link" style="display:none; margin-left:8px;">Sign out</button>
+        </div>
+      </header>
+
+      <section class="center-column">
+        <button
+          class="btn-primary"
+          onclick="window.location.href='sign-up.html'"
+        >
+          Get Started
+        </button>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    <script src="script.js"></script>
+    </main>
+  </body>
+</html>

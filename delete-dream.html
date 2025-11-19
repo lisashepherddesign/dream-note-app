@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Delete Dream</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">Welcome back, User.</p>
+        <div class="header-controls">
+          <span id="user-indicator" style="display:none; margin-left:12px; font-size:14px; color:var(--text-muted);">Signed in</span>
+          <button id="signout-btn" class="btn-link" style="display:none; margin-left:8px;">Sign out</button>
+        </div>
+      </header>
+
+      <section class="empty-state">
+        <h2 class="empty-title">Delete this dream?</h2>
+        <p class="empty-body">
+          This action can’t be undone. You’ll remove this entry from your log
+          forever.
+        </p>
+
+        <div
+          style="
+            margin-top: 24px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+          "
+        >
+          <button
+            class="btn-primary"
+            style="max-width: 160px"
+            onclick="window.location.href='dream-log.html'"
+          >
+            Yes, delete
+          </button>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="window.location.href='dream-log.html'"
+          >
+            Cancel
+          </button>
+        </div>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    <script src="script.js"></script>
+    </main>
+  </body>
+</html>

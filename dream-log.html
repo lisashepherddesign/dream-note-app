@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Dream Log</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">Welcome back, User.</p>
+        <div class="header-controls">
+          <span id="user-indicator" style="display:none; margin-left:12px; font-size:14px; color:var(--text-muted);">Signed in</span>
+          <button id="signout-btn" class="btn-link" style="display:none; margin-left:8px;">Sign out</button>
+        </div>
+      </header>
+
+      <section>
+        <div class="log-header-row">
+          <div>
+            <h2 class="log-title">Dream Log</h2>
+            <p class="log-subtitle">
+              Tap a dream to view, edit, or reflect.
+            </p>
+          </div>
+          <button
+            class="icon-button-round"
+            title="Add dream"
+            onclick="window.location.href='add-edit-dream.html'"
+          >
+            <span>＋</span>
+          </button>
+        </div>
+
+        <div class="dream-list">
+          <div class="dream-item">
+            <div class="dream-meta">
+              <div class="dream-title">Dream Title Here</div>
+              <div class="dream-date">Fri, 10 Oct 2025</div>
+            </div>
+            <div class="dream-actions">
+              <button
+                class="icon-button-round"
+                title="View"
+                onclick="window.location.href='add-edit-dream.html'"
+              >
+                👁
+              </button>
+              <button
+                class="icon-button-round"
+                title="Edit"
+                onclick="window.location.href='add-edit-dream.html'"
+              >
+                ✎
+              </button>
+              <button
+                class="icon-button-round"
+                title="Delete"
+                onclick="window.location.href='delete-dream.html'"
+              >
+                🗑
+              </button>
+            </div>
+          </div>
+
+          <!-- Duplicate and change titles/dates as needed -->
+        </div>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    <script src="script.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Note – Add Dream</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand-mark">
+          <img src="assets/cow-logo.svg" alt="Dream Note logo" />
+        </div>
+        <h1 class="app-title">Dream Note</h1>
+        <p class="app-tagline">Welcome back, User.</p>
+        <div class="header-controls">
+          <span id="user-indicator" style="display:none; margin-left:12px; font-size:14px; color:var(--text-muted);">Signed in</span>
+          <button id="signout-btn" class="btn-link" style="display:none; margin-left:8px;">Sign out</button>
+        </div>
+      </header>
+
+      <section class="center-column">
+        <div class="card">
+          <h2 style="margin-top: 0; margin-bottom: 16px">New Dream</h2>
+          <form>
+            <div class="field-group">
+              <label class="field-label" for="title">Title</label>
+              <input
+                id="title"
+                class="input"
+                type="text"
+                placeholder="Give your dream a name"
+              />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="date">Date</label>
+              <input id="date" class="input" type="date" />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="body">Details</label>
+              <textarea
+                id="body"
+                class="input"
+                rows="6"
+                style="resize: vertical"
+                placeholder="Write everything you remember..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              Save Dream
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div class="corner-logo">
+        <img src="assets/cow-logo.svg" alt="" />
+      </div>
+    <script src="script.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+    --bg: #111214;
+    --card-bg: #18191c;
+    --accent: #21427f;
+    --accent-hover: #3055a4;
+    --text: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --border-subtle: #26272b;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.page {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 48px 24px 32px;
+    position: relative;
+}
+
+/* Header / brand */
+
+.header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.brand-mark {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 16px;
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.app-title {
+    font-family: "Playfair Display", "Georgia", serif;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.app-tagline {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Layout helpers */
+
+.center-column {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+
+button,
+.button {
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, transform 0.1s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Card */
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px 24px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-subtle);
+}
+
+/* Form fields */
+
+.field-group {
+    margin-bottom: 18px;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    background: #101115;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: #6c6c6c;
+}
+
+/* Corner logo */
+
+.corner-logo {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    width: 72px;
+    height: 72px;
+    opacity: 0.9;
+}
+
+.corner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Dream log */
+
+.log-header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.log-title {
+    font-family: "Playfair Display", "Georgia", serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.log-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-align: center;
+}
+
+.icon-button-round {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: none;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-button-round span {
+    font-size: 22px;
+}
+
+.dream-list {
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+}
+
+.dream-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 24px;
+    min-width: 260px;
+}
+
+.dream-meta {
+    text-align: left;
+}
+
+.dream-title {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.dream-date {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.dream-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Empty states / add / delete */
+
+.empty-state {
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.empty-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.empty-body {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .page {
+        padding: 32px 16px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .brand-mark {
+        width: 72px;
+        height: 72px;
+    }
+
+    .center-column {
+        max-width: 100%;
+    }
+
+    .corner-logo {
+        right: 16px;
+        bottom: 16px;
+        width: 56px;
+        height: 56px;
+    }
+}
