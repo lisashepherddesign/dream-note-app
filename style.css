@@ -210,8 +210,13 @@ button,
     cursor: pointer;
 }
 
-.icon-button-round span {
-    font-size: 22px;
+.icon-button-round img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+    /* remove filter so SVGs render their native colors (they are white icons) */
+    filter: none;
 }
 
 .dream-list {
